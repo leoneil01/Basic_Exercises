@@ -10,12 +10,17 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            int total, num1, num2;
+            int[] total = new int[4];
 
-            num1 = 10;
-            num2 = 10;
-            total = num1 / num2;
-            Console.WriteLine(total);
+            total[0] = -1 + 4 * 6;
+            total[1] = (35 + 5) % 7;
+            total[2] = 14 + (-4) * 6 / 11;
+            total[3] = 2 + 15 / 6 * 1 -7 % 2;
+
+            Console.WriteLine(total[0]);
+            Console.WriteLine(total[1]);
+            Console.WriteLine(total[2]);
+            Console.WriteLine(total[3]);
         }
     }
 }
