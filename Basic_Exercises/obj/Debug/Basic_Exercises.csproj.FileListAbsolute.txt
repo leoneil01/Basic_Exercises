@@ -1,1 +1,6 @@
 C:\Users\admin\Documents\Custom Office Templates\C#\Basic_Exercises\Basic_Exercises\Basic_Exercises\bin\Debug\Basic_Exercises.exe.config
+C:\Users\admin\Documents\Custom Office Templates\C#\Basic_Exercises\Basic_Exercises\Basic_Exercises\bin\Debug\Basic_Exercises.exe
+C:\Users\admin\Documents\Custom Office Templates\C#\Basic_Exercises\Basic_Exercises\Basic_Exercises\bin\Debug\Basic_Exercises.pdb
+C:\Users\admin\Documents\Custom Office Templates\C#\Basic_Exercises\Basic_Exercises\Basic_Exercises\obj\Debug\Basic_Exercises.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Custom Office Templates\C#\Basic_Exercises\Basic_Exercises\Basic_Exercises\obj\Debug\Basic_Exercises.exe
+C:\Users\admin\Documents\Custom Office Templates\C#\Basic_Exercises\Basic_Exercises\Basic_Exercises\obj\Debug\Basic_Exercises.pdb

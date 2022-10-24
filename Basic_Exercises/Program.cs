@@ -10,6 +10,8 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello");
+            Console.WriteLine("Leoneil Odrunia");
         }
     }
 }
