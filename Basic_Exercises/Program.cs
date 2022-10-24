@@ -10,20 +10,19 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            double[] number = new double[4];
-            double avg;
+            int x, y, z;
+            int[] total = new int[2];
 
-            Console.Write("Enter the first number: ");
-            number[0] = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter the second number: ");
-            number[1] = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter the third number: ");
-            number[2] = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter the fourth number: ");
-            number[3] = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter first number: ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter second number: ");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter third number: ");
+            z = Convert.ToInt32(Console.ReadLine());
 
-            avg = (number[0] + number[1] + number[2] + number[3]) / 4;
-            Console.WriteLine($"\nThe average of {number[0]}, {number[1]}, {number[2]}, {number[3]} is {avg}");
+            total[0] = (x + y) * z;
+            total[1] = (x * y) + (y * z);
+            Console.WriteLine($"\nResult of specified numbers {x}, {y} and {z}, (x + y).z is {total[0]} and x.y + y.z is {total[1]}");
         }
     }
 }
