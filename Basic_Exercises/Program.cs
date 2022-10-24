@@ -10,17 +10,15 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            int[] total = new int[4];
+            int num1, num2;
 
-            total[0] = -1 + 4 * 6;
-            total[1] = (35 + 5) % 7;
-            total[2] = 14 + (-4) * 6 / 11;
-            total[3] = 2 + 15 / 6 * 1 -7 % 2;
+            Console.Write("Input the first number: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the second number: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(total[0]);
-            Console.WriteLine(total[1]);
-            Console.WriteLine(total[2]);
-            Console.WriteLine(total[3]);
+            Console.WriteLine($"\nFirst Number: {num2}");
+            Console.WriteLine($"Second Number: {num1}");
         }
     }
 }
