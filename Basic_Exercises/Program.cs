@@ -10,8 +10,12 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("Leoneil Odrunia");
+            int total, num1, num2;
+
+            num1 = 10;
+            num2 = 10;
+            total = num1 + num2;
+            Console.WriteLine(total);
         }
     }
 }
