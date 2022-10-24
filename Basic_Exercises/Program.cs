@@ -14,7 +14,7 @@ namespace Basic_Exercises
 
             num1 = 10;
             num2 = 10;
-            total = num1 + num2;
+            total = num1 / num2;
             Console.WriteLine(total);
         }
     }
