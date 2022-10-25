@@ -11,15 +11,13 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            int num1;
+            string str, toLower;
 
-            Console.Write("Enter a number: ");
-            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter a text: ");
+            str = Console.ReadLine();
+            toLower = str.ToLower();
 
-            if (num1 >= 20 && num1 <= 100 || num1 == 200)
-            {
-                Console.WriteLine("False");
-            }
+            Console.WriteLine($"\n{toLower}");
         }
     }
 }
