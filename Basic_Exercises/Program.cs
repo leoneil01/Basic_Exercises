@@ -18,14 +18,12 @@ namespace Basic_Exercises
             Console.Write("Input the second number: ");
             number[1] = Convert.ToInt32(Console.ReadLine());
 
-            if (number[0] == number[1])
-            {
-                Console.WriteLine((number[0] + number[1]) * 3);
-            }
-            else
-            {
-                Console.WriteLine(number[0] + number[1]);
-            }
+            Console.WriteLine(SumTriple(number[0], number[1]));
+        }
+
+        public static int SumTriple(int x, int y)
+        {
+            return x == y ? (x + y) * 3 : x + y;
         }
     }
 }
