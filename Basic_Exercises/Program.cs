@@ -18,12 +18,21 @@ namespace Basic_Exercises
             Console.Write("Input the second number: ");
             number[1] = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(AbsoluteValueDouble(number[0], number[1]));
+            if (number[0] > number[1])
+            {
+                Console.WriteLine((number[0] - number[1]) * 2);
+            }
+            else
+            {
+                Console.WriteLine((number[0] - number[1]) * (-1));
+            }
+
+            //Console.WriteLine(AbsoluteValueDouble(number[0], number[1]));
         }
 
-        public static int AbsoluteValueDouble(int x, int y)
-        {
-            return x > y ? (x - y) * 2 : (x - y) * (-1);
-        }
+        //public static int AbsoluteValueDouble(int x, int y)
+        //{
+        //    return x > y ? (x - y) * 2 : (x - y) * (-1);
+        //}
     }
 }
