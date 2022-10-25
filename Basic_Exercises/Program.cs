@@ -10,15 +10,16 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            int digit;
+            int number;
 
-            Console.Write("Enter a digit: ");
-            digit = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter a number: ");
+            number = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"\n{digit} {digit} {digit} {digit}");
-            Console.WriteLine($"{digit}{digit}{digit}{digit}");
-            Console.WriteLine($"{digit} {digit} {digit} {digit}");
-            Console.WriteLine($"{digit}{digit}{digit}{digit}");
+            Console.WriteLine($"\n{number}{number}{number}");
+            Console.WriteLine($"{number} {number}");
+            Console.WriteLine($"{number} {number}");
+            Console.WriteLine($"{number} {number}");
+            Console.WriteLine($"{number}{number}{number}");
         }
     }
 }
