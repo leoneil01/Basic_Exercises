@@ -11,40 +11,19 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-        //    long sum;
-        //    int ctr;
-        //    int n;
+            int num1, sum;
 
-        //    Console.WriteLine("Sum of the first 500 prime numbers:");
-        //    sum = 0;
-        //    ctr = 0;
-        //    n = 2;
-        //    while (ctr < 500)
-        //    {
-        //        if (isPrime(n))
-        //        {
-        //            sum += n;
-        //            ctr++;
-        //        }
-        //        n++;
-        //    }
+            Console.Write("Input a number: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
 
-        //    Console.WriteLine(sum.ToString());
-        //}
+            sum = 0;
+            while (num1 != 0)
+            {
+                sum += num1 % 10;
+                num1 /= 10;
+            }
 
-        //public static bool isPrime (int n)
-        //{
-        //    int x = (int) Math.Floor(Math.Sqrt(n));
-
-        //    if (n == 1) return false;
-        //    if (n == 2) return true;
-
-        //    for (int i = 2; i <= x; i++)
-        //    {
-        //        if (n % i == 0) return false;
-        //    }
-
-        //    return true;
+            Console.WriteLine($"\nSum of the digits of the said integer: {sum}");
         }
     }
 }
