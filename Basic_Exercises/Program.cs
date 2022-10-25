@@ -10,26 +10,15 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            int index1, index2, index3;
-            string name;
-
-            Console.Write("Enter a word: ");
-            name = Console.ReadLine();
-            Console.Write("Enter the first index that you want to remove from the word that you input: ");
-            index1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the second index that you want to remove from the word that you input: ");
-            index2 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the third index that you want to remove from the word that you input: ");
-            index3 = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine(remove_char(name, index1));
-            Console.WriteLine(remove_char(name, index2));
-            Console.WriteLine(remove_char(name, index3));
+            //Console.WriteLine(first_last("w3resource"));
+            //Console.WriteLine(first_last("Python"));
+            //Console.WriteLine(first_last("x"));
         }
 
-        public static string remove_char(string name, int index)
-        {
-            return name.Remove(index, 1);
-        }
+        //public static string first_last(string ustr)
+        //{
+        //    //return ustr.Length > 1
+        //    //    ? ustr.Substring(ustr.Length - 1) + ustr.Substring(1, ustr.Length - 2) + ustr.Substring(0, 1) : ustr;
+        //}
     }
 }
