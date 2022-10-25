@@ -10,16 +10,16 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            int number;
+            double C, K, F;
 
-            Console.Write("Enter a number: ");
-            number = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the amount of celsius: ");
+            C = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine($"\n{number}{number}{number}");
-            Console.WriteLine($"{number} {number}");
-            Console.WriteLine($"{number} {number}");
-            Console.WriteLine($"{number} {number}");
-            Console.WriteLine($"{number}{number}{number}");
+            K = C + 273.15; // Celsius to Kelvin Formula
+            F = (C * 9 / 5) + 32; // Celsius to Fahrenheit Formula
+            //F = (K - 273.15) * 9 / 5 + 32; (Kelvin to Fahrenheit Formula)
+            Console.WriteLine($"\nKelvin = {K}");
+            Console.WriteLine($"Fahrenheit = {F}");
         }
     }
 }
