@@ -13,13 +13,19 @@ namespace Basic_Exercises
         {
             int[] number = new int[2];
 
-            Console.Write("Input first integer: ");
+            Console.Write("Input the first number: ");
             number[0] = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Input second integer: ");
+            Console.Write("Input the second number: ");
             number[1] = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("\nCheck if one is negative and one is positive:");
-            Console.WriteLine((number[0] < 0 && number[1] > 0) || (number[0] > 0 && number[1] < 0));
+            if (number[0] == number[1])
+            {
+                Console.WriteLine((number[0] + number[1]) * 3);
+            }
+            else
+            {
+                Console.WriteLine(number[0] + number[1]);
+            }
         }
     }
 }
