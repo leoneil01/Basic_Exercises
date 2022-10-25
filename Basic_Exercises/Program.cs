@@ -18,12 +18,12 @@ namespace Basic_Exercises
             Console.Write("Input the second number: ");
             number[1] = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(SumTriple(number[0], number[1]));
+            Console.WriteLine(AbsoluteValueDouble(number[0], number[1]));
         }
 
-        public static int SumTriple(int x, int y)
+        public static int AbsoluteValueDouble(int x, int y)
         {
-            return x == y ? (x + y) * 3 : x + y;
+            return x > y ? (x - y) * 2 : (x - y) * (-1);
         }
     }
 }
