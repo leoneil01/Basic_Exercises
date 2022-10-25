@@ -11,13 +11,24 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            string str, toLower;
+            string text, word;
 
-            Console.Write("Enter a text: ");
-            str = Console.ReadLine();
-            toLower = str.ToLower();
+            Console.Write("Enter a line of text: ");
+            text = Console.ReadLine();
+            string[] words = text.Split(new[] { " " }, StringSplitOptions.None);
+            word = "";
+            int ctr = 0;
 
-            Console.WriteLine($"\n{toLower}");
+            foreach (String s in words)
+            {
+                if (s.Length > ctr)
+                {
+                    word = s;
+                    ctr = s.Length;
+                } 
+            }
+
+            Console.WriteLine($"\n{word}");
         }
     }
 }
