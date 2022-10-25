@@ -10,16 +10,26 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            double C, K, F;
+            int index1, index2, index3;
+            string name;
 
-            Console.Write("Enter the amount of celsius: ");
-            C = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter a word: ");
+            name = Console.ReadLine();
+            Console.Write("Enter the first index that you want to remove from the word that you input: ");
+            index1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the second index that you want to remove from the word that you input: ");
+            index2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the third index that you want to remove from the word that you input: ");
+            index3 = Convert.ToInt32(Console.ReadLine());
 
-            K = C + 273.15; // Celsius to Kelvin Formula
-            F = (C * 9 / 5) + 32; // Celsius to Fahrenheit Formula
-            //F = (K - 273.15) * 9 / 5 + 32; (Kelvin to Fahrenheit Formula)
-            Console.WriteLine($"\nKelvin = {K}");
-            Console.WriteLine($"Fahrenheit = {F}");
+            Console.WriteLine(remove_char(name, index1));
+            Console.WriteLine(remove_char(name, index2));
+            Console.WriteLine(remove_char(name, index3));
+        }
+
+        public static string remove_char(string name, int index)
+        {
+            return name.Remove(index, 1);
         }
     }
 }
