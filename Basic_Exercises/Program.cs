@@ -10,15 +10,14 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine(first_last("w3resource"));
-            //Console.WriteLine(first_last("Python"));
-            //Console.WriteLine(first_last("x"));
-        }
+            Console.Write("Enter a string: ");
+            string text = Console.ReadLine();
 
-        //public static string first_last(string ustr)
-        //{
-        //    //return ustr.Length > 1
-        //    //    ? ustr.Substring(ustr.Length - 1) + ustr.Substring(1, ustr.Length - 2) + ustr.Substring(0, 1) : ustr;
-        //}
+            if (text.Length >= 1)
+            {
+                var a = text.Substring(0, 1);
+                Console.WriteLine(a + text + a);
+            }
+        }
     }
 }
