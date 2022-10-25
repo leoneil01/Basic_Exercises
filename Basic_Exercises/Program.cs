@@ -11,24 +11,14 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            string text, word;
-
-            Console.Write("Enter a line of text: ");
-            text = Console.ReadLine();
-            string[] words = text.Split(new[] { " " }, StringSplitOptions.None);
-            word = "";
-            int ctr = 0;
-
-            foreach (String s in words)
+            Console.WriteLine("Odd numbers from 1 to 99: \n");
+            for (int n = 1; n < (99 + 1); n++)
             {
-                if (s.Length > ctr)
+                if (n % 2 != 0)
                 {
-                    word = s;
-                    ctr = s.Length;
-                } 
+                    Console.WriteLine(n);
+                }
             }
-
-            Console.WriteLine($"\n{word}");
         }
     }
 }
