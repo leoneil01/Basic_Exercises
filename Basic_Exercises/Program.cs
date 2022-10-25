@@ -10,12 +10,15 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            int age;
+            int digit;
 
-            Console.Write("Enter your age: ");
-            age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter a digit: ");
+            digit = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"\nYou look older than {age}");
+            Console.WriteLine($"\n{digit} {digit} {digit} {digit}");
+            Console.WriteLine($"{digit}{digit}{digit}{digit}");
+            Console.WriteLine($"{digit} {digit} {digit} {digit}");
+            Console.WriteLine($"{digit}{digit}{digit}{digit}");
         }
     }
 }
