@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
@@ -11,19 +12,27 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            int num1, sum;
+            //string text, result;
 
-            Console.Write("Input a number: ");
-            num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter enter a text: ");
+            //text = Console.ReadLine();
 
-            sum = 0;
-            while (num1 != 0)
-            {
-                sum += num1 % 10;
-                num1 /= 10;
-            }
+            //result = "";
+            //List<string> wordList = new List<string>();
+            //string[]word = text.Split(new[] {
+            //    " "
+            //}, StringSplitOptions.None);
 
-            Console.WriteLine($"\nSum of the digits of the said integer: {sum}");
+            //for (int i = word.Length - 1; i >= 0; i--)
+            //{
+            //    result += word[i] + " ";
+            //}
+
+            //wordList.Add(result);
+            //foreach(String s in wordList)
+            //{
+            //    Console.WriteLine($"\nReverse String: {s}");
+            //}
         }
     }
 }
