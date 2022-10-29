@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
@@ -12,27 +13,9 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            //string text, result;
-
-            //Console.Write("Enter enter a text: ");
-            //text = Console.ReadLine();
-
-            //result = "";
-            //List<string> wordList = new List<string>();
-            //string[]word = text.Split(new[] {
-            //    " "
-            //}, StringSplitOptions.None);
-
-            //for (int i = word.Length - 1; i >= 0; i--)
-            //{
-            //    result += word[i] + " ";
-            //}
-
-            //wordList.Add(result);
-            //foreach(String s in wordList)
-            //{
-            //    Console.WriteLine($"\nReverse String: {s}");
-            //}
+            // must add text.txt file in your desktop and change the 'admin' to your local Users name
+            FileInfo fileInfo = new FileInfo("C:/Users/admin/Desktop/text.txt"); 
+            Console.WriteLine($"File Size: {fileInfo.Length.ToString()}");
         }
     }
 }
