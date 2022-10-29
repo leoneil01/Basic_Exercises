@@ -13,9 +13,17 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            // must add text.txt file in your desktop and change the 'admin' to your local Users name
-            FileInfo fileInfo = new FileInfo("C:/Users/admin/Desktop/text.txt"); 
-            Console.WriteLine($"File Size: {fileInfo.Length.ToString()}");
+            string hexVal;
+            int decimalVal;
+
+            Console.Write("Input Hexadecimal Number: ");
+            hexVal = Console.ReadLine();
+
+            decimalVal = int.Parse(hexVal, System.Globalization.NumberStyles.HexNumber);
+
+            Console.WriteLine($"\nHexadecimal number: {hexVal}");
+            Console.WriteLine("Covert to--");
+            Console.WriteLine($"Decimal number: {decimalVal}");
         }
     }
 }
