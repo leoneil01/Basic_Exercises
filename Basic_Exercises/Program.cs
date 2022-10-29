@@ -13,17 +13,19 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            string hexVal;
-            int decimalVal;
+            //int[] firstArray = { 1, 2, 3, 4, 5 };
+            //int[] secondArray = {6, 7, 8, 9, 10 };
 
-            Console.Write("Input Hexadecimal Number: ");
-            hexVal = Console.ReadLine();
+            //Console.WriteLine("First Array: [{0}]", string.Join(", ", firstArray));
+            //Console.WriteLine("Second Array: [{0}]", string.Join(", ", secondArray));
 
-            decimalVal = int.Parse(hexVal, System.Globalization.NumberStyles.HexNumber);
+            //Console.WriteLine("\nMultiply the corresponding elements of two arrays: ");
 
-            Console.WriteLine($"\nHexadecimal number: {hexVal}");
-            Console.WriteLine("Covert to--");
-            Console.WriteLine($"Decimal number: {decimalVal}");
+            //for (int i = 0; i < firstArray.Length; i++)
+            //{
+            //    Console.Write(firstArray[i] * secondArray[i] + " ");
+            //}
+            //Console.Write("\n");
         }
     }
 }
