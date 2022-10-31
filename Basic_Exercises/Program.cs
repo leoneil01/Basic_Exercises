@@ -13,19 +13,15 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            //int[] firstArray = { 1, 2, 3, 4, 5 };
-            //int[] secondArray = {6, 7, 8, 9, 10 };
+            //string text;
 
-            //Console.WriteLine("First Array: [{0}]", string.Join(", ", firstArray));
-            //Console.WriteLine("Second Array: [{0}]", string.Join(", ", secondArray));
+            //Console.Write("Input a text: ");
+            //text = Console.ReadLine();
 
-            //Console.WriteLine("\nMultiply the corresponding elements of two arrays: ");
-
-            //for (int i = 0; i < firstArray.Length; i++)
+            //if (text.Length > 4)
             //{
-            //    Console.Write(firstArray[i] * secondArray[i] + " ");
+            //    Console.WriteLine(text.Length < 4 ? text + text + text : text.Substring(text.Length - 4) + text.Substring(text.Length - 4) + text.Substring(text.Length - 4));
             //}
-            //Console.Write("\n");
         }
     }
 }
