@@ -13,15 +13,12 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-            //string text;
-
-            //Console.Write("Input a text: ");
-            //text = Console.ReadLine();
-
-            //if (text.Length > 4)
-            //{
-            //    Console.WriteLine(text.Length < 4 ? text + text + text : text.Substring(text.Length - 4) + text.Substring(text.Length - 4) + text.Substring(text.Length - 4));
-            //}
+		    Console.Write("Input integer: ");
+		    int i = Convert.ToInt32(Console.ReadLine());
+		    
+		    if(i > 0) {
+		        Console.WriteLine(i % 3 == 0 || i % 7 == 0);
+		    }
         }
     }
 }
