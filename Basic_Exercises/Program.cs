@@ -13,11 +13,13 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-		    Console.Write("Input integer: ");
-		    int i = Convert.ToInt32(Console.ReadLine());
+		    Console.Write("Input a string: ");
+		    string str = Console.ReadLine();
 		    
-		    if(i > 0) {
-		        Console.WriteLine(i % 3 == 0 || i % 7 == 0);
+		    if(str.Length >= 5) {
+		        Console.WriteLine(str.Substring(0, 5) == "Hello");
+		    } else {
+		        Console.WriteLine(false);
 		    }
         }
     }
