@@ -13,18 +13,12 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-		    Console.Write("Input a first number(<100): ");
+		    Console.Write("Input a first number: ");
 		    int firstNumber = Convert.ToInt32(Console.ReadLine());
-		    Console.Write("Input a second number(>200): ");
+		    Console.Write("Input a second number: ");
 		    int secondNumber = Convert.ToInt32(Console.ReadLine()); 
 		    
-		    // if(firstNumber < 100 && secondNumber > 200) {
-		    // 	Console.WriteLine(true);
-		    // } else {
-		    //     Console.WriteLine(false);
-		    // }
-		    
-		    Console.WriteLine(firstNumber < 100 && secondNumber > 200);
+		    Console.WriteLine((firstNumber > -10 && firstNumber < 10) || (secondNumber > -10 && secondNumber < 10));
         }
     }
 }
