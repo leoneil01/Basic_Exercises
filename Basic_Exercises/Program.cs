@@ -13,12 +13,12 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-		    // Console.Write("Input the first integer: ");
-		    // int x = Convert.ToInt32(Console.ReadLine());
-		    // Console.Write("Input the second integer: ");
-		    // int y = Convert.ToInt32(Console.ReadLine());
-		    
-		    // Console.WriteLine(x != y ? (Math.Abs(x - 20) < (Math.Abs(y - 20)) ? x : y) : 0);
+        // Console.Write("Input a string (contains atleast one 'w' char): ");
+        // string str = Console.ReadLine();
+        
+        // var count = str.Count(s => s == 'w');
+        
+        // Console.WriteLine(count >= 1 && count <= 3);
         }
     }
 }
