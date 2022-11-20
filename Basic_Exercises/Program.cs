@@ -13,14 +13,10 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-		    Console.Write("Test Date: ");
+		    Console.Write("Test Data: ");
 		    string str = Console.ReadLine();
 		    
-		    if(str.Substring(1, 2) == "HP" || str.Substring(1, 2) == "hp") {
-		        Console.WriteLine(str.Remove(1, 2));   
-		    } else {
-		        Console.WriteLine(str);
-		    }
+		    Console.WriteLine(str.Substring(0, 1).Equals("P") && str.Substring(1, 1).Equals("H") ? str.Substring(0, 2) : str);
         }
     }
 }
