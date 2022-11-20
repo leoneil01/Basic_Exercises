@@ -13,10 +13,15 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-		    Console.Write("Test Data: ");
-		    string str = Console.ReadLine();
+		    Console.Write("Input the first integer: ");
+		    int int1 = Convert.ToInt32(Console.ReadLine());
+		    Console.Write("Input the second integer: ");
+		    int int2 = Convert.ToInt32(Console.ReadLine());
+		    Console.Write("Input the third integer: ");
+		    int int3 = Convert.ToInt32(Console.ReadLine());
 		    
-		    Console.WriteLine(str.Substring(0, 1).Equals("P") && str.Substring(1, 1).Equals("H") ? str.Substring(0, 2) : str);
+		    Console.WriteLine("Largest integer: {0}", Math.Max(int1, Math.Max(int2, int3)));
+		    Console.WriteLine("Lowest integer: {0}", Math.Min(int1, Math.Min(int2, int3)));
         }
     }
 }
