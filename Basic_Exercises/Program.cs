@@ -13,12 +13,14 @@ namespace Basic_Exercises
     {
         static void Main(string[] args)
         {
-		    Console.Write("Input a first number: ");
-		    int firstNumber = Convert.ToInt32(Console.ReadLine());
-		    Console.Write("Input a second number: ");
-		    int secondNumber = Convert.ToInt32(Console.ReadLine()); 
+		    Console.Write("Test Date: ");
+		    string str = Console.ReadLine();
 		    
-		    Console.WriteLine((firstNumber > -10 && firstNumber < 10) || (secondNumber > -10 && secondNumber < 10));
+		    if(str.Substring(1, 2) == "HP" || str.Substring(1, 2) == "hp") {
+		        Console.WriteLine(str.Remove(1, 2));   
+		    } else {
+		        Console.WriteLine(str);
+		    }
         }
     }
 }
