@@ -11,17 +11,14 @@ namespace Basic_Exercises
 {
     class Program
     {
-		    Console.Write("Input a string: ");
-		    string str = Console.ReadLine();
-		    
-		    // takes the first three indexes and if it's three w (www), will print false
-		    Console.WriteLine(str.Length > 2 ? (str.Substring(0, 1).Equals("w") && str.Substring(1, 2).Equals("ww") ? false : true) : true); // ?bug
-		    
-		    // if(str.Length > 2) {
-		    //     Console.WriteLine(str.Substring(0, 1).Equals("w") && str.Substring(1, 2).Equals("ww") ? false : true);
-		    // } else {
-		    //     Console.WriteLine(true);
-		    // }
-        }
+        // Console.Write("Input a string : ");
+        // string str = Console.ReadLine();
+        
+        // string result = string.Empty;
+        // for (int i = 0; i < str.Length; i++)
+        //     {
+        //         if (i % 2 == 0) result += str[i];
+        //     }
+        // Console.WriteLine(result);
     }
 }
