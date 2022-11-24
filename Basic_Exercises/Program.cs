@@ -11,14 +11,11 @@ namespace Basic_Exercises
 {
     class Program
     {
-        // Console.Write("Input a string : ");
-        // string str = Console.ReadLine();
+        // Console.Write("Input an integer: ");
+        // int i = Convert.ToInt32(Console.ReadLine());
         
-        // string result = string.Empty;
-        // for (int i = 0; i < str.Length; i++)
-        //     {
-        //         if (i % 2 == 0) result += str[i];
-        //     }
-        // Console.WriteLine(result);
+        // int[] numbers = {1, 2, 2, 3, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 9};
+        
+        // Console.WriteLine($"Number of {i} present in the said array: {numbers.Count(n => n == i)}");
     }
 }
