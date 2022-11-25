@@ -11,11 +11,14 @@ namespace Basic_Exercises
 {
     class Program
     {
-        Console.Write("Input an integer: ");
-        int i = Convert.ToInt32(Console.ReadLine());
+        int[] array = {1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 1
+        };
+        Console.WriteLine("Array: {0}", string.Join(", ", array));
         
-        int[] numbers = {1, 2, 2, 3, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 9};
-        
-        Console.WriteLine(numbers[0] == i || numbers[numbers.Length - 1] == i);
+        int total = 0;
+        for(int i = 0; i < array.Length; i++) {
+            total += array[i];
+        }
+        Console.WriteLine("Sum: {0}", total);
     }
 }
