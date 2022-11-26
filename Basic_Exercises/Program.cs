@@ -11,12 +11,16 @@ namespace Basic_Exercises
 {
     class Program
     {
-        int[] array = {1, 2, 5, 7, 8};
-        Console.WriteLine("Array: [{0}]", string.Join(", ", array));
+        int[] array1 = {1, 2, 5};
+        int[] array2 = {0, 3, 8};
+        int[] array3 = {-1, 0, 2};
+        Console.WriteLine("Array1: [{0}]", string.Join(", ", array1));
+        Console.WriteLine("Array2: [{0}]", string.Join(", ", array2));
+        Console.WriteLine("Array3: [{0}]", string.Join(", ", array3));
         
-        Console.WriteLine("\n--------------------------------------------------\n");
+        Console.WriteLine("\n-------------------------\n");
         
-        int highestVal = array[0] < array[array.Length - 1] ? array[array.Length - 1] : array[0];
-        Console.WriteLine("Highest value between first and last values of the said array: {0}", highestVal);
+        int[] newArray = {array1[1], array2[1], array3[1]};
+        Console.WriteLine("New array: [{0}]", string.Join(", ", newArray));
     }
 }
