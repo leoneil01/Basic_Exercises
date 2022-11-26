@@ -11,14 +11,15 @@ namespace Basic_Exercises
 {
     class Program
     {
-        int[] array1 = {1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 1};
-        int[] array2 = {1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 5};
-        Console.WriteLine("Array1: [{0}]", string.Join(", ", array1));
-        Console.WriteLine("Array2: [{0}]", string.Join(", ", array2));
+        int[] array = {1, 2, 8};
+        Console.WriteLine("Array: {0}", string.Join(", ", array));
         
-        Console.WriteLine("---------------------------------------------------------------------");
-        Console.WriteLine("Check if the first and last element of the two arrays (length is more than 1) is equal.");
+        int x = array[0];
+        for(int i = 0; i < array.Length - 1; i++) {
+            array[i] = array[i + 1];
+        }
+        array[array.Length - 1] = x;
         
-        Console.WriteLine((array1[0] == array2[0] || array1[array1.Length - 1] == array2[array2.Length - 1]) && (array1.Length > 1 && array2.Length > 1));
+        Console.WriteLine("Array after rotation: {0}", string.Join(", ", array));
     }
 }
