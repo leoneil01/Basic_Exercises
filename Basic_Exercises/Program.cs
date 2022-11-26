@@ -11,15 +11,12 @@ namespace Basic_Exercises
 {
     class Program
     {
-        int[] array = {1, 2, 8};
-        Console.WriteLine("Array: {0}", string.Join(", ", array));
+        int[] array = {1, 2, 5, 7, 8};
+        Console.WriteLine("Array: [{0}]", string.Join(", ", array));
         
-        int x = array[0];
-        for(int i = 0; i < array.Length - 1; i++) {
-            array[i] = array[i + 1];
-        }
-        array[array.Length - 1] = x;
+        Console.WriteLine("\n--------------------------------------------------\n");
         
-        Console.WriteLine("Array after rotation: {0}", string.Join(", ", array));
+        int highestVal = array[0] < array[array.Length - 1] ? array[array.Length - 1] : array[0];
+        Console.WriteLine("Highest value between first and last values of the said array: {0}", highestVal);
     }
 }
