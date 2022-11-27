@@ -11,16 +11,21 @@ namespace Basic_Exercises
 {
     class Program
     {
-        int[] array1 = {1, 2, 5};
-        int[] array2 = {0, 3, 8};
-        int[] array3 = {-1, 0, 2};
-        Console.WriteLine("Array1: [{0}]", string.Join(", ", array1));
-        Console.WriteLine("Array2: [{0}]", string.Join(", ", array2));
-        Console.WriteLine("Array3: [{0}]", string.Join(", ", array3));
+        int[] array = {2, 4, 7, 8, 6};
+        Console.WriteLine("Original Array: [{0}]", string.Join(", ", array));
         
-        Console.WriteLine("\n-------------------------\n");
+        Console.WriteLine("\n--------------------------------------------\n");
         
-        int[] newArray = {array1[1], array2[1], array3[1]};
-        Console.WriteLine("New array: [{0}]", string.Join(", ", newArray));
+        Console.WriteLine("Checks if an array contains an odd number?");
+        Console.WriteLine(evenOdd(array));
+    }
+        
+    public static bool evenOdd(int[] array)
+    {
+        foreach(int i in array) {
+            if(i % 2 != 0)
+                return true;
+        }
+        return false;
     }
 }
