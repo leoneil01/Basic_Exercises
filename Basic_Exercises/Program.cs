@@ -12,21 +12,15 @@ namespace Basic_Exercises
     class Program
     {
     	public static void Main(string[] args) {
-		    int[] array = {2, 4, 7, 8, 6};
-		    Console.WriteLine("Original Array: [{0}]", string.Join(", ", array));
-		    
-		    Console.WriteLine("\n--------------------------------------------\n");
-		    
-		    Console.WriteLine("Checks if an array contains an odd number?");
-		    Console.WriteLine(evenOdd(array));
-        }
-        
-		public static bool evenOdd(int[] array) {
-		    foreach(int i in array) {
-		        if(i % 2 != 0)
-		            return true;
-		    }
-		    return false;
+		    // Console.WriteLine(centuryFromYear(2000) == 20);
+		    // Console.WriteLine(centuryFromYear(1900) == 19);
+		    // Console.WriteLine(centuryFromYear(1901) == 19);
+		    // Console.WriteLine(centuryFromYear(1901) == 20);
+		    // Console.WriteLine(centuryFromYear(1555) == 20);
 		}
+		    
+		// public static int centuryFromYear(int year) {
+		//     return (int) (year / 100) + ((year % 100 == 0) ? 0 : 1);
+		// }
     }
 }
