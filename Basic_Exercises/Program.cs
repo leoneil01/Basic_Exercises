@@ -12,15 +12,24 @@ namespace Basic_Exercises
     class Program
     {
     	public static void Main(string[] args) {
-		    // Console.WriteLine(centuryFromYear(2000) == 20);
-		    // Console.WriteLine(centuryFromYear(1900) == 19);
-		    // Console.WriteLine(centuryFromYear(1901) == 19);
-		    // Console.WriteLine(centuryFromYear(1901) == 20);
-		    // Console.WriteLine(centuryFromYear(1555) == 20);
-		}
+		    // Program adjacentElementProduct = new Program();
 		    
-		// public static int centuryFromYear(int year) {
-		//     return (int) (year / 100) + ((year % 100 == 0) ? 0 : 1);
+		    // Console.WriteLine(adjacentElementProduct.ArrayAdjacentElementsProduct(new int[] {2, 4, 2, 6, 9, 3}) == 27);
+		    // Console.WriteLine(adjacentElementProduct.ArrayAdjacentElementsProduct(new int[] {0, -1, -1, -2}) == 2);
+		    // Console.WriteLine(adjacentElementProduct.ArrayAdjacentElementsProduct(new int[] {6, 1, 12, 3, 1, 4}) == 36);
+		    // Console.WriteLine(adjacentElementProduct.ArrayAdjacentElementsProduct(new int[] {1, 4, 3, 0}) == 16);
+		}
+		
+		// public int ArrayAdjacentElementsProduct(int[] inputArray) {
+		//     int arrayIndex = 0;
+		//     int product = inputArray[arrayIndex] * inputArray[arrayIndex + 1];
+		    
+		//     arrayIndex++;
+		//     while(arrayIndex + 1 < inputArray.Length) {
+		//         product = (inputArray[arrayIndex] * inputArray[arrayIndex + 1]) > product ? inputArray[arrayIndex] * inputArray[arrayIndex + 1] : product;
+		//         arrayIndex++;
+		//     }
+		//     return product;
 		// }
     }
 }
