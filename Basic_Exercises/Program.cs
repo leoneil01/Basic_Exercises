@@ -12,31 +12,32 @@ namespace Basic_Exercises
     class Program
     {
     	public static void Main(string[] args) {
-		    // Program increasingSequence = new Program();
+		    // Program sumMatrix = new Program();
 		    
-		    // int[] array1 = {1, 3, 5, 6, 9};
-		    // int[] array2 = {0, 10};
-		    // int[] array3 = {1, 3, 1, 3};
-		    // Console.WriteLine("Array1: [{0}]", string.Join(", ", array1));
-		    // Console.WriteLine("Array2: [{0}]", string.Join(", ", array2));
-		    // Console.WriteLine("Array3: [{0}]", string.Join(", ", array3));
-		    
-		    // Console.WriteLine("-------------------------");
-		    
-		    // Console.WriteLine(increasingSequence.IncreasingSequence(array1));
-		    // Console.WriteLine(increasingSequence.IncreasingSequence(array2));
-		    // Console.WriteLine(increasingSequence.IncreasingSequence(array3));
+		    // Console.WriteLine(sumMatrix.SumMatrixElements(new int[][] {
+		    //     new int[] {0, 2, 3, 2},
+		    //     new int[] {0, 6, 0, 1},
+		    //     new int[] {4, 0, 3, 0}
+		    // }));
+		    // Console.WriteLine(sumMatrix.SumMatrixElements(new int[][] {
+		    //     new int[] {1, 2, 1, 0},
+		    //     new int[] {0, 5, 0, 0},
+		    //     new int[] {1, 1, 3, 10}
+		    // }));
+		    // Console.WriteLine(sumMatrix.SumMatrixElements(new int[][] {
+		    //     new int[] {1, 1},
+		    //     new int[] {2, 2},
+		    //     new int[] {3, 3},
+		    //     new int[] {4, 4}
+		    // }));
 		}
 		
-		// public bool IncreasingSequence(int[] inputArray) {
+		// public int SumMatrixElements(int[][] matrix) {
 		//     int ctr = 0;
-		//     for(int i = 0; i < inputArray.Length - 1; i++) {
-		//         if(inputArray[i] >= inputArray[i + 1])
-		//             ctr++;
-		//         if(i + 2 < inputArray.Length && inputArray[i] >= inputArray[i +2])
-		//             ctr++;
-		//     }
-		//     return ctr <= 2;
+		//     for(int i = 0; i < matrix[0].Length; i++)
+		//         for(int j = 0; j < matrix.Length && matrix[j][i] > 0; j++)
+		//             ctr += matrix[j][i];
+		//     return ctr;
 		// }
     }
 }
