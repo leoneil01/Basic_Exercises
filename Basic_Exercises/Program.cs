@@ -12,21 +12,16 @@ namespace Basic_Exercises
     class Program
     {
     	public static void Main(string[] args) {
-		    Program testProg = new Program();
+		    Program program1 = new Program();
 		    
-		    Console.WriteLine("Check if a given number present in an array of numbers");
-		    Console.WriteLine("\n--------------------------------------------------------\n");
+		    Console.Write("Please enter a file path (i.e c:/csharp/ex/test.cpp): ");
+		    string filePath = Console.ReadLine();
 		    
-		    int[] array = {1, 3, 5, 7, 9};
-		    Console.Write("Please enter an integer: ");
-		    int input = Convert.ToInt32(Console.ReadLine());
-		    
-		    Console.WriteLine(testProg.Test(array, input));
-		    Console.WriteLine("Array: [{0}]", string.Join(", ", array));
+		    Console.WriteLine("File Name (w/ extension): {0}", program1.Test(filePath));
 		}
 		
-		public bool Test(int[] array, int n) {
-		    return array.Contains(n);
+		public string Test(string filePath) {
+		    return filePath.Split('/').Last();
 		}
     }
 }
