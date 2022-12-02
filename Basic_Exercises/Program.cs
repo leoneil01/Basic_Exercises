@@ -12,16 +12,21 @@ namespace Basic_Exercises
     class Program
     {
     	public static void Main(string[] args) {
-		    Program program1 = new Program();
+		    // Program program1 = new Program();
 		    
-		    Console.Write("Please enter a file path (i.e c:/csharp/ex/test.cpp): ");
-		    string filePath = Console.ReadLine();
+		    // Console.WriteLine("Program that multiply all of elements of a given array of numbers by the array length.\n");
 		    
-		    Console.WriteLine("File Name (w/ extension): {0}", program1.Test(filePath));
+		    // int[] nums = {1, 3, 5, 7, 9};
+		    // int[] newNums = program1.Test(nums);
+		    // Console.WriteLine("Array: [{0}]", string.Join(", ", nums));
+		    // Console.WriteLine("-----------------------");
+		    
+		    // Array.ForEach(newNums, Console.WriteLine);
 		}
 		
-		public string Test(string filePath) {
-		    return filePath.Split('/').Last();
-		}
+		// public int[] Test(int[] nums) {
+		//     int arrayLength = nums.Length;
+		//     return nums.Select(el => el * arrayLength).ToArray();
+		// }
     }
 }
