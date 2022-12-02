@@ -12,21 +12,20 @@ namespace Basic_Exercises
     class Program
     {
     	public static void Main(string[] args) {
-		    // Program program1 = new Program();
+		    Program program1 = new Program();
 		    
-		    // Console.WriteLine("Program that multiply all of elements of a given array of numbers by the array length.\n");
+		    Console.Write("Please enter the first integer: ");
+		    string x = Console.ReadLine();
+		    Console.Write("Please enter the second integer: ");
+		    string y = Console.ReadLine();
 		    
-		    // int[] nums = {1, 3, 5, 7, 9};
-		    // int[] newNums = program1.Test(nums);
-		    // Console.WriteLine("Array: [{0}]", string.Join(", ", nums));
-		    // Console.WriteLine("-----------------------");
+		    Console.WriteLine("-------------------------------");
 		    
-		    // Array.ForEach(newNums, Console.WriteLine);
+		    Console.WriteLine("Minimum Value: {0}", program1.Test(x, y));
 		}
 		
-		// public int[] Test(int[] nums) {
-		//     int arrayLength = nums.Length;
-		//     return nums.Select(el => el * arrayLength).ToArray();
-		// }
+		public string Test(string str1, string str2) {
+		    return Int32.Parse(str1) > Int32.Parse(str2) ? str2 : str1;
+		}
     }
 }
