@@ -14,18 +14,15 @@ namespace Basic_Exercises
     	public static void Main(string[] args) {
 		    Program program1 = new Program();
 		    
-		    Console.Write("Please enter the first integer: ");
-		    string x = Console.ReadLine();
-		    Console.Write("Please enter the second integer: ");
-		    string y = Console.ReadLine();
+		    Console.WriteLine("Replacing 'P' with '9', 'T' with '0', 'H' with '6' and 'A' with '8'\n");
 		    
-		    Console.WriteLine("-------------------------------");
-		    
-		    Console.WriteLine("Minimum Value: {0}", program1.Test(x, y));
+		    Console.Write("Please enter a string: ");
+		    string input = Console.ReadLine();
+		    Console.WriteLine("Replaced Value: {0}", program1.Test(input));
 		}
 		
-		public string Test(string str1, string str2) {
-		    return Int32.Parse(str1) > Int32.Parse(str2) ? str2 : str1;
+		public string Test(string str) {
+		    return str.Replace("P", "9").Replace("T", "0").Replace("H", "6").Replace("A", "8").Replace("p", "9").Replace("t", "0").Replace("h", "6").Replace("a", "8");
 		}
     }
 }
