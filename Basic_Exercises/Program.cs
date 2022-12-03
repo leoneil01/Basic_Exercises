@@ -12,17 +12,21 @@ namespace Basic_Exercises
     class Program
     {
     	public static void Main(string[] args) {
-		    Program program1 = new Program();
-		    
-		    Console.WriteLine("Replacing 'P' with '9', 'T' with '0', 'H' with '6' and 'A' with '8'\n");
+		    Program program = new Program();
 		    
 		    Console.Write("Please enter a string: ");
-		    string input = Console.ReadLine();
-		    Console.WriteLine("Replaced Value: {0}", program1.Test(input));
+		    string input1 = Console.ReadLine();
+		    Console.Write("Please enter upper case single character to be counted: ");
+		    char input2 = Convert.ToChar(Console.ReadLine());
+		    Console.Write("Please enter lower case single character to be counted: ");
+		    char input3 = Convert.ToChar(Console.ReadLine());
+		    
+		    Console.WriteLine("--------------------------------------------------------");
+		    Console.WriteLine("The counted character of {0} and {1} in a given string is {2}", input2, input3, program.Test(input1, input2, input3));
 		}
 		
-		public string Test(string str) {
-		    return str.Replace("P", "9").Replace("T", "0").Replace("H", "6").Replace("A", "8").Replace("p", "9").Replace("t", "0").Replace("h", "6").Replace("a", "8");
+		public int Test(string str, char upperCase, char lowerCase) {
+		    return str.Split(upperCase, lowerCase).Length - 1;
 		}
     }
 }
