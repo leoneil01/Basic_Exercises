@@ -14,19 +14,17 @@ namespace Basic_Exercises
     	public static void Main(string[] args) {
 		    Program program = new Program();
 		    
-		    Console.Write("Please enter a string: ");
-		    string input1 = Console.ReadLine();
-		    Console.Write("Please enter upper case single character to be counted: ");
-		    char input2 = Convert.ToChar(Console.ReadLine());
-		    Console.Write("Please enter lower case single character to be counted: ");
-		    char input3 = Convert.ToChar(Console.ReadLine());
+		    Console.WriteLine("Check if a given string contains only lowercase or uppercase characters");
+		    Console.WriteLine("-------------------------------------------------------------------------");
 		    
-		    Console.WriteLine("--------------------------------------------------------");
-		    Console.WriteLine("The counted character of {0} and {1} in a given string is {2}", input2, input3, program.Test(input1, input2, input3));
+		    Console.Write("Please enter a string: ");
+		    string input = Console.ReadLine();
+		    
+		    Console.WriteLine(program.Test(input));
 		}
 		
-		public int Test(string str, char upperCase, char lowerCase) {
-		    return str.Split(upperCase, lowerCase).Length - 1;
+		public bool Test(string str) {
+		    return str == str.ToUpper() || str == str.ToLower();
 		}
     }
 }
