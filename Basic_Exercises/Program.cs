@@ -14,17 +14,17 @@ namespace Basic_Exercises
     	public static void Main(string[] args) {
 		    Program program = new Program();
 		    
-		    Console.WriteLine("Check if a given string contains only lowercase or uppercase characters");
-		    Console.WriteLine("-------------------------------------------------------------------------");
+		    Console.WriteLine("Remove the first and last elements from a given string");
+		    Console.WriteLine("-------------------------------------------------------");
 		    
 		    Console.Write("Please enter a string: ");
 		    string input = Console.ReadLine();
 		    
-		    Console.WriteLine(program.Test(input));
+		    Console.WriteLine("After removing first and last elements: {0}", program.Test(input));
 		}
 		
-		public bool Test(string str) {
-		    return str == str.ToUpper() || str == str.ToLower();
+		public string Test(string str) {
+		    return str.Length > 1 ? str.Substring(1, str.Length - 2) : str;
 		}
     }
 }
