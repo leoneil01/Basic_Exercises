@@ -14,20 +14,19 @@ namespace Basic_Exercises
     	public static void Main(string[] args) {
 		    Program program = new Program();
 		    
-		    Console.Write("Please enter a string: ");
-		    string input = Console.ReadLine();
+		    int[] num1 = {1, 2, 3, 5, 4, 2, 3, 4};
+		    Console.WriteLine("Array1: [{0}]", string.Join(", ", num1));
+		    Console.WriteLine("Check whether the average value of the said array is a whole number or not: " + program.Test(num1));
 		    
-		    Console.WriteLine("-------------------------------------------");
-		    Console.WriteLine("Original String: {0}", input);
-		    Console.WriteLine("Test for consecutive similar letter: {0}", program.Test(input));
+		    Console.WriteLine("---------------------------------------------------------------------------------");
+		    
+		    int[] num2 = {2, 4, 2, 6, 4, 8};
+		    Console.WriteLine("Array2: [{0}]", string.Join(", ", num2));
+		    Console.WriteLine("Check whether the average value of the said array is a whole number or not: " + program.Test(num2));
 		}
 		
-		public bool Test(string str) {
-		    for(int i = 0; i < str.Length - 1; i++) {
-		        if(str[i] == str[i + 1])
-		            return true;
-		    }
-		    return false;
+		public bool Test(int[] array) {
+		    return array.Average() % 1 == 0;
 		}
     }
 }
