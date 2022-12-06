@@ -12,21 +12,19 @@ namespace Basic_Exercises
     class Program
     {
     	public static void Main(string[] args) {
-		    Program program = new Program();
+		    // Program program = new Program();
 		    
-		    int[] num1 = {1, 2, 3, 5, 4, 2, 3, 4};
-		    Console.WriteLine("Array1: [{0}]", string.Join(", ", num1));
-		    Console.WriteLine("Check whether the average value of the said array is a whole number or not: " + program.Test(num1));
+		    // Console.Write("Please enter a string: ");
+		    // string input = Console.ReadLine();
 		    
-		    Console.WriteLine("---------------------------------------------------------------------------------");
+		    // Console.WriteLine("------------------------------------------------------------------------");
 		    
-		    int[] num2 = {2, 4, 2, 6, 4, 8};
-		    Console.WriteLine("Array2: [{0}]", string.Join(", ", num2));
-		    Console.WriteLine("Check whether the average value of the said array is a whole number or not: " + program.Test(num2));
+		    // Console.WriteLine("Original String: {0}", input);
+		    // Console.WriteLine("Convert the letters of the said string into alphabetical order: {0}", program.Test(input));
 		}
 		
-		public bool Test(int[] array) {
-		    return array.Average() % 1 == 0;
-		}
+		// public string Test(string str) {
+		//     return new string(str.OrderBy(x => x).ToArray());
+		// }
     }
 }
