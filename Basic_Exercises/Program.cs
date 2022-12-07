@@ -12,22 +12,20 @@ namespace Basic_Exercises
     class Program
     {
     	public static void Main(string[] args) {
-		    Program program = new Program();
-		    
-		    Console.WriteLine("Check the length of a given string is odd or even\n");
-		    Console.Write("Please enter a string: ");
-		    string input = Console.ReadLine();
-		    
-		    Console.WriteLine("------------------------------------------------------------------------");
-		    
-		    Console.WriteLine("String: {0}", input);
-		    Console.WriteLine("String Length: {0}", program.Test(input));
+			Program program = new Program();
+			
+			Console.WriteLine("Take a positive number and return the nth odd number");
+			Console.WriteLine("-----------------------------------------------------");
+			
+			Console.WriteLine("1st odd number: {0}", program.Test(1));
+			Console.WriteLine("2nd odd number: {0}", program.Test(2));
+			Console.WriteLine("3rd odd number: {0}", program.Test(3));
+			Console.WriteLine("4th odd number: {0}", program.Test(4));
+			Console.WriteLine("100th odd number: {0}", program.Test(100));
 		}
 		
-		public string Test(string str) {
-		    if(str.Length % 2 == 1)
-		        return "Odd";
-		    return "Even";
+		public int Test(int i) {
+			return i * 2 - 1;
 		}
     }
 }
