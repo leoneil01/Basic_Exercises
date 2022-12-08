@@ -14,18 +14,17 @@ namespace Basic_Exercises
     	public static void Main(string[] args) {
 			Program program = new Program();
 			
-			Console.WriteLine("Take a positive number and return the nth odd number");
-			Console.WriteLine("-----------------------------------------------------");
+			Console.WriteLine("Get the ASCII value of a given character");
+			Console.WriteLine("------------------------------------------");
 			
-			Console.WriteLine("1st odd number: {0}", program.Test(1));
-			Console.WriteLine("2nd odd number: {0}", program.Test(2));
-			Console.WriteLine("3rd odd number: {0}", program.Test(3));
-			Console.WriteLine("4th odd number: {0}", program.Test(4));
-			Console.WriteLine("100th odd number: {0}", program.Test(100));
+			Console.Write("Please enter a character: ");
+			char input = Convert.ToChar(Console.ReadLine());
+			
+			Console.WriteLine("ASCII value of {0} is: {1}", input, program.Test(input));
 		}
 		
-		public int Test(int i) {
-			return i * 2 - 1;
+		public int Test(char i) {
+			return (int)i;
 		}
     }
 }
