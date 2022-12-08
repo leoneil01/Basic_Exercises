@@ -14,17 +14,17 @@ namespace Basic_Exercises
     	public static void Main(string[] args) {
 			Program program = new Program();
 			
-			Console.WriteLine("Get the ASCII value of a given character");
+			Console.WriteLine("Check whether a given word is plural or not");
 			Console.WriteLine("------------------------------------------");
 			
-			Console.Write("Please enter a character: ");
-			char input = Convert.ToChar(Console.ReadLine());
+			Console.Write("Please enter a string: ");
+			string input = Console.ReadLine();
 			
-			Console.WriteLine("ASCII value of {0} is: {1}", input, program.Test(input));
+			Console.WriteLine("Is '{0}' is plural? {1}", input, program.Test(input));
 		}
 		
-		public int Test(char i) {
-			return (int)i;
+		public bool Test(string str) {
+			return str.EndsWith("s"); //* plural with 's' only, this doesn't include irregular plural like foot to feet
 		}
     }
 }
