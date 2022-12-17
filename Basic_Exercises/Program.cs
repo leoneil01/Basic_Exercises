@@ -14,20 +14,17 @@ namespace Basic_Exercises
     	public static void Main(string[] args) {
 		    Program program = new Program();
 		    
-		    Console.WriteLine("Check the length of a given string is odd or even\n");
-		    Console.Write("Please enter a string: ");
-		    string input = Console.ReadLine();
+		    int[] nums1 = { 1, 2, 3 };
+		    int[] nums2 = { -2, 0, 3, 4 };
 		    
-		    Console.WriteLine("------------------------------------------------------------------------");
-		    
-		    Console.WriteLine("String: {0}", input);
-		    Console.WriteLine("String Length: {0}", program.Test(input));
+		    Console.WriteLine("Array1: [{0}]", string.Join(", ", nums1));
+		    Console.WriteLine("Sum of squares of elements of the said array: {0}", program.Test(nums1));
+		    Console.WriteLine("\nArray2: [{0}]", string.Join(", ", nums2));
+		    Console.WriteLine("Sum of squares of elements of the said array: {0}", program.Test(nums2));
 		}
 		
-		public string Test(string str) {
-		    if(str.Length % 2 == 1)
-		        return "Odd";
-		    return "Even";
+		public int Test(int[] nums) {
+		    return nums.Sum(n => n * n);
 		}
     }
 }
